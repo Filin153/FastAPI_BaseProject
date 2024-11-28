@@ -1,0 +1,37 @@
+2024-11-28 15:16:57,639 - uvicorn.error - INFO - Started server process [70667]
+2024-11-28 15:16:57,640 - uvicorn.error - INFO - Waiting for application startup.
+2024-11-28 15:16:57,640 - uvicorn - INFO - Start up!
+2024-11-28 15:16:57,640 - uvicorn.error - INFO - Application startup complete.
+2024-11-28 15:17:32,495 - uvicorn.error - INFO - Shutting down
+2024-11-28 15:17:32,598 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-11-28 15:17:32,598 - uvicorn.error - INFO - Application shutdown complete.
+2024-11-28 15:17:32,598 - uvicorn.error - INFO - Finished server process [70667]
+2024-11-28 15:17:32,992 - uvicorn.error - INFO - Started server process [70691]
+2024-11-28 15:17:32,992 - uvicorn.error - INFO - Waiting for application startup.
+2024-11-28 15:17:32,992 - uvicorn - INFO - Start up!
+2024-11-28 15:17:32,992 - uvicorn.error - INFO - Application startup complete.
+2024-11-28 15:17:36,261 - uvicorn - INFO - hello world!
+2024-11-28 15:17:54,716 - uvicorn - INFO - hello world!
+2024-11-28 15:17:57,976 - uvicorn - INFO - hello world!
+2024-11-28 15:18:06,010 - uvicorn - INFO - hello world!
+2024-11-28 15:19:15,686 - uvicorn.error - INFO - Shutting down
+2024-11-28 15:19:15,788 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-11-28 15:19:15,788 - uvicorn.error - INFO - Application shutdown complete.
+2024-11-28 15:19:15,788 - uvicorn.error - INFO - Finished server process [70691]
+2024-11-28 15:19:16,167 - uvicorn.error - INFO - _serve - Started server process [70743]
+2024-11-28 15:19:16,167 - uvicorn.error - INFO - startup - Waiting for application startup.
+2024-11-28 15:19:16,168 - uvicorn - INFO - startup - Start up!
+2024-11-28 15:19:16,168 - uvicorn.error - INFO - startup - Application startup complete.
+2024-11-28 15:19:28,792 - uvicorn - INFO - root - hello world!
+2024-11-28 15:19:44,430 - uvicorn.error - INFO - shutdown - Shutting down
+2024-11-28 15:19:44,534 - uvicorn.error - INFO - shutdown - Waiting for application shutdown.
+2024-11-28 15:19:44,535 - uvicorn.error - INFO - shutdown - Application shutdown complete.
+2024-11-28 15:19:44,535 - uvicorn.error - INFO - _serve - Finished server process [70743]
+2024-11-28 15:19:44,908 - INFO - _serve - Started server process [70774]
+2024-11-28 15:19:44,908 - INFO - startup - Waiting for application startup.
+2024-11-28 15:19:44,908 - INFO - startup - Start up!
+2024-11-28 15:19:44,909 - INFO - startup - Application startup complete.
+2024-11-28 15:19:57,846 - INFO - shutdown - Shutting down
+2024-11-28 15:19:57,949 - INFO - shutdown - Waiting for application shutdown.
+2024-11-28 15:19:57,949 - INFO - shutdown - Application shutdown complete.
+2024-11-28 15:19:57,949 - INFO - _serve - Finished server process [70774]
