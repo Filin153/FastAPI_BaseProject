@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  app_base:
+    build: .
+    container_name: app_base
+    restart: always
+    networks:
+      - app
+    volumes:
+      - ./app.log:/app/app.log
+    ports:
+      - 9999:1111
+
+networks:
+  app:
+    driver: bridge
