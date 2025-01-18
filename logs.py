@@ -8,7 +8,7 @@ def setup_logging():
 
     # Создаем обработчики для вывода в консоль и в файл
     console_handler = logging.StreamHandler()
-    file_handler = logging.FileHandler("app.log")
+    file_handler = logging.FileHandler("logs.txt")
 
     # Формат логов
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(funcName)s - %(message)s')

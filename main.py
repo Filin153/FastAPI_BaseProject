@@ -13,6 +13,10 @@ app = FastAPI(
 async def startup():
     logger.info("Start up!")
 
+@app.on_event("shutdown")
+async def shutdown():
+    logger.info("Shutdown!")
+
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 app.add_middleware(CORSMiddleware,
                    allow_origins=["*"],

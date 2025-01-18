@@ -1,0 +1,10 @@
+2025-01-18 16:24:38,283 - INFO - _serve - Started server process [98974]
+2025-01-18 16:24:38,283 - INFO - startup - Waiting for application startup.
+2025-01-18 16:24:38,283 - INFO - startup - Start up!
+2025-01-18 16:24:38,283 - INFO - startup - Application startup complete.
+2025-01-18 16:24:38,286 - INFO - _log_started_message - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-01-18 16:24:43,959 - INFO - shutdown - Shutting down
+2025-01-18 16:24:44,062 - INFO - shutdown - Waiting for application shutdown.
+2025-01-18 16:24:44,062 - INFO - shutdown - Shutdown!
+2025-01-18 16:24:44,062 - INFO - shutdown - Application shutdown complete.
+2025-01-18 16:24:44,063 - INFO - _serve - Finished server process [98974]
