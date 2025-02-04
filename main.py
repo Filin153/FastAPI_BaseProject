@@ -1,6 +1,7 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
+from fastapi.responses import JSONResponse
 
 from logs import logger
 from middleware import process_time_middleware, ErrorMiddleware
@@ -31,6 +32,12 @@ app.add_middleware(ErrorMiddleware)
 async def process_time(request: Request, call_next):
     return await process_time_middleware(request, call_next)
 
+@app.exception_handler(HTTPException)
+async def custom_http_exception_handler(request: Request, exc: HTTPException):
+    # Если exc.detail уже является словарём, можно вернуть его напрямую.
+    # Если это не так, можно обернуть в нужный формат.
+    content = exc.detail if isinstance(exc.detail, dict) else {"message": exc.detail}
+    return JSONResponse(status_code=exc.status_code, content=content)
 
 @app.get("/")
 async def root():
