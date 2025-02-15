@@ -1,0 +1,7 @@
+2025-02-15 22:10:33,078 - INFO - _serve - Started server process [7]
+2025-02-15 22:10:33,078 - INFO - startup - Waiting for application startup.
+2025-02-15 22:10:33,079 - INFO - startup - Start up!
+2025-02-15 22:10:33,079 - INFO - startup - Application startup complete.
+2025-02-15 22:10:33,082 - INFO - _log_started_message - Uvicorn running on http://0.0.0.0:1111 (Press CTRL+C to quit)
+2025-02-15 22:10:41,521 - INFO - root - hello world!
+2025-02-15 22:10:56,554 - INFO - root - hello world!

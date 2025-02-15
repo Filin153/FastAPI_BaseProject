@@ -2,13 +2,15 @@ version: "3"
 
 services:
   app_base:
-    build: .
+    build: ./services/base/.
     container_name: app_base
     restart: always
     networks:
       - app
     volumes:
-      - ./app.log:/app/app.log
+      - ./services/base/logs.txt:/app/logs.txt
+      - ./common:/app/common
+      - ./database:/app/database
     ports:
       - 9999:1111
 
