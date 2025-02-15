@@ -14,6 +14,20 @@ services:
     ports:
       - 9999:1111
 
+
+#  alembic:
+#    build: ./alembic/.
+#    restart: on-failure
+#    networks:
+#      - app
+#    volumes:
+#      - ./.env:/app/.env
+#      - ./common/:/app/common
+#      - ./database:/app/database
+#      - ./alembic/:/app/alembic
+#      - ./alembic.ini/:/app/alembic.ini
+#    command: alembic upgrade head
+
 networks:
   app:
     driver: bridge
