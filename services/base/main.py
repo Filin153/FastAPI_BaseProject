@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
-from fastapi.responses import JSONResponse
 
 from common.logs import setup_logging
+from common.middleware import custom_http_exception_handler
 from middleware import process_time_middleware, ErrorMiddleware
 
 app = FastAPI(
@@ -38,11 +38,8 @@ async def process_time(request: Request, call_next):
 
 
 @app.exception_handler(HTTPException)
-async def custom_http_exception_handler(request: Request, exc: HTTPException):
-    # Если exc.detail уже является словарём, можно вернуть его напрямую.
-    # Если это не так, можно обернуть в нужный формат.
-    content = exc.detail if isinstance(exc.detail, dict) else {"message": exc.detail}
-    return JSONResponse(status_code=exc.status_code, content=content)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    return await custom_http_exception_handler(request, exc)
 
 
 @app.get("/")
