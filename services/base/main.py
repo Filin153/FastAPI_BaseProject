@@ -3,8 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 
 from common.logs import setup_logging
-from common.middleware import custom_http_exception_handler
-from middleware import process_time_middleware, ErrorMiddleware
+from common.middleware import custom_http_exception_handler, process_time_middleware, ErrorMiddleware
 
 app = FastAPI(
     title="Base App"
